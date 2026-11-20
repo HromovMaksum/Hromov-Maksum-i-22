@@ -1,0 +1,104 @@
+<h1>Оформлення замовлення в інтернет-магазині</h1>
+
+<form action="#" method="post">
+
+    <!-- 1. Поля введення даних покупця -->
+    <fieldset>
+        <legend>Дані покупця</legend>
+
+        <p>
+            <label for="first-name">Ім'я:*</label><br>
+            <input type="text" id="first-name" name="first_name" required>
+        </p>
+
+        <p>
+            <label for="last-name">Прізвище:*</label><br>
+            <input type="text" id="last-name" name="last_name" required>
+        </p>
+
+        <p>
+            <label for="email">Електронна пошта:*</label><br>
+            <input type="email" id="email" name="email" required placeholder="example@mail.com">
+        </p>
+
+        <p>
+            <label for="phone">Номер телефону:*</label><br>
+            <input type="tel" id="phone" name="phone" required placeholder="+380XXXXXXXXX">
+        </p>
+
+        <p>
+            <label for="quantity">Кількість товару (від 1 до 10):*</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required>
+        </p>
+
+        <p>
+            <label for="address">Адреса доставки (не менше 10 символів):*</label><br>
+            <textarea id="address" name="address" minlength="10" rows="3" cols="40" required placeholder="Введіть повну адресу..."></textarea>
+        </p>
+    </fieldset>
+
+    <br>
+
+    <!-- 2. Вибір способу доставки (обов'язково вибереться один) -->
+    <fieldset>
+        <legend>Спосіб доставки:*</legend>
+        
+        <label>
+            <input type="radio" name="delivery" value="pickup" required> Самовивіз
+        </label><br>
+        
+        <label>
+            <input type="radio" name="delivery" value="post_box"> Поштомат
+        </label><br>
+        
+        <label>
+            <input type="radio" name="delivery" value="courier"> Кур'єр
+        </label>
+    </fieldset>
+
+    <br>
+
+    <!-- 3. Додаткові параметри (необов'язковий вибір декількох пунктів) -->
+    <fieldset>
+        <legend>Додаткові параметри:</legend>
+        
+        <label>
+            <input type="checkbox" name="options[]" value="gift_wrap"> Подарункова упаковка
+        </label><br>
+        
+        <label>
+            <input type="checkbox" name="options[]" value="extra_warranty"> Додаткова гарантія
+        </label><br>
+        
+        <label>
+            <input type="checkbox" name="options[]" value="sms_notification"> SMS-повідомлення
+        </label><br>
+        
+        <label>
+            <input type="checkbox" name="options[]" value="call_before"> Телефонний дзвінок перед доставкою
+        </label>
+    </fieldset>
+
+    <br>
+
+    <!-- 4. Випадаючий список для вибору способу оплати -->
+    <p>
+        <label for="payment">Спосіб оплати:*</label><br>
+        <select id="payment" name="payment" required>
+            <option value="">-- Оберіть спосіб оплати --</option>
+            <option value="card">Оплата карткою</option>
+            <option value="cash">Оплата при отриманні</option>
+            <option value="bank">Банківський переказ</option>
+        </select>
+    </p>
+
+    <!-- 5. Коментар до замовлення (не більше 200 символів) -->
+    <p>
+        <label for="comment">Коментар до замовлення (макс. 200 символів):</label><br>
+        <textarea id="comment" name="comment" maxlength="200" rows="4" cols="40" placeholder="Ваші побажання..."></textarea>
+    </p>
+
+    <!-- Кнопка відправки форми -->
+    <button type="submit">Оформити замовлення</button>
+
+</form>

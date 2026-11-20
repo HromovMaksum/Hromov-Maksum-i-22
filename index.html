@@ -1,0 +1,125 @@
+<title>Результати навчання студентів</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        padding: 40px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #222;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: 30px auto;
+        background-color: white;
+    }
+
+    th,
+    td {
+        border: 1px solid #333;
+        padding: 12px;
+        text-align: center;
+    }
+
+    th {
+        background-color: #ddd;
+    }
+
+    .student {
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .summary {
+        font-weight: bold;
+        text-align: left;
+        background-color: #eee;
+    }
+</style>
+<h1>Результати навчання студентів</h1>
+
+<table>
+
+    <!-- Верхній заголовок -->
+    <tr>
+        <th rowspan="2">Прізвище та ім'я</th>
+
+        <th colspan="2">
+            Практичні роботи
+        </th>
+
+        <th rowspan="2">Тест</th>
+
+        <th rowspan="2">Підсумкова оцінка</th>
+    </tr>
+
+    <!-- Другий рядок заголовка -->
+    <tr>
+        <th>Практична робота №1</th>
+        <th>Практична робота №2</th>
+    </tr>
+
+
+    <!-- Студент 1 -->
+    <tr>
+        <td class="student">Іваненко Іван</td>
+        <td>10</td>
+        <td>10</td>
+        <td>11</td>
+        <td>10</td>
+    </tr>
+
+
+    <!-- Студент 2 -->
+    <tr>
+        <td class="student">Петренко Петро</td>
+        <td>8</td>
+        <td>8</td>
+        <td>9</td>
+        <td>8</td>
+    </tr>
+
+
+    <!-- Студент 3 -->
+    <tr>
+        <td class="student">Шевченко Анна</td>
+        <td>12</td>
+        <td>12</td>
+        <td>11</td>
+        <td>12</td>
+    </tr>
+
+
+    <!-- Студент 4 -->
+    <tr>
+        <td class="student">Коваленко Максим</td>
+        <td>9</td>
+        <td>9</td>
+        <td>10</td>
+        <td>9</td>
+    </tr>
+
+
+    <!-- Студент 5 -->
+    <tr>
+        <td class="student">Мельник Олег</td>
+        <td>7</td>
+        <td>7</td>
+        <td>8</td>
+        <td>7</td>
+    </tr>
+
+
+    <!-- Підсумкова частина -->
+    <tr>
+        <td colspan="5" class="summary">
+            Кількість студентів: 5
+        </td>
+    </tr>
+
+</table>
